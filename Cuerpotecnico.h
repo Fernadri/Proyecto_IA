@@ -2,6 +2,7 @@
 #include <string>
 #include <QString>
 #include <map>
+#include <vector>
 
 using namespace std;
 
@@ -29,7 +30,7 @@ public:
 class PrimerEntrenador:public SegundoEntrenador{
 public:
     PrimerEntrenador();
-    void decidir(int);
+    vector<int> decidir(int,vector<int>);
     //void decidirFormacion();
     //void meterJugador();
     //void quitarJugador();

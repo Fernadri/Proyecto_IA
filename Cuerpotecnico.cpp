@@ -1,9 +1,13 @@
 #include "Cuerpotecnico.h"
 #include "formacion433.h"
+#include <vector>
+#include "fallo_registrar.h"
 
 using namespace std;
-extern string nivel;
+string nivel;
 int porcentaje;
+
+
 CuerpoTecnico::CuerpoTecnico(){
 
 }
@@ -27,7 +31,7 @@ void CuerpoTecnico::buscarUsuario(string nom, string contra){
     contrasena=contra;
 }
 
-int SegundoEntrenador::decidir(string){
+int SegundoEntrenador::decidir(string nivel){
     if (nivel == "Ofensiva"){
         porcentaje = 90;
         return porcentaje;
@@ -40,6 +44,17 @@ int SegundoEntrenador::decidir(string){
     }
 }
 
-void PrimerEntrenador::decidir(int){
-
+vector<int> PrimerEntrenador::decidir(int number,vector<int> convocatoria){
+    int cont=0;
+    for(unsigned int i=0; i < convocatoria.size(); i++){
+        if(number == convocatoria[i]){
+            convocatoria.erase(convocatoria.begin()+i);
+            cont++;
+        }
+    }
+    if(cont==0){
+        fallo_registrar fallo;
+        fallo.exec();
+    }
+    return convocatoria;
 }

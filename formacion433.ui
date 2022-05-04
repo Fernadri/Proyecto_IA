@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>985</width>
-    <height>577</height>
+    <width>860</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -55,16 +55,6 @@
     <string>Mostar</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_portero">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>70</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lineEdit_dorsal_portero_ali">
    <property name="geometry">
     <rect>
@@ -78,27 +68,14 @@
   <widget class="QPushButton" name="pushButton_portero">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>70</y>
+     <x>340</x>
+     <y>440</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>630</x>
-     <y>70</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>POR</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -121,348 +98,128 @@
     <string>NOMBRE DEL EQUIPO:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>720</x>
-     <y>40</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DORSALES</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_lateral_d">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>110</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_lateral_d">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>110</y>
+     <x>560</x>
+     <y>350</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>110</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>LD</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_central_d">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>150</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_central_d">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>150</y>
+     <x>410</x>
+     <y>380</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>150</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DF</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_central_i">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>190</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_central_i">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>190</y>
+     <x>260</x>
+     <y>380</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>190</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DF</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_lateral_i">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>230</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_i">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>230</y>
+     <x>130</x>
+     <y>360</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>230</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>LI</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_mcc">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>270</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_mcc">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>270</y>
+     <x>350</x>
+     <y>260</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_mcd">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>310</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>270</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MCC</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_mcd">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>310</y>
+     <x>440</x>
+     <y>250</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>310</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MCD</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_mci">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>350</y>
+     <x>250</x>
+     <y>250</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_mci">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>350</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>350</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MCI</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_ei">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>390</y>
+     <x>270</x>
+     <y>160</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>390</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>EI</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_ei">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>390</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_ed">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>430</y>
+     <x>430</x>
+     <y>160</y>
      <width>31</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>430</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>ED</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_ed">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>430</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_lateral_DC">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>470</y>
+     <x>350</x>
+     <y>140</y>
      <width>31</width>
      <height>21</height>
     </rect>
@@ -471,34 +228,11 @@
     <string>OK</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_dorsal_ed_2">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>470</y>
-     <width>171</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>470</y>
-     <width>55</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DC</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButtonOFENSIVA">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>520</y>
+     <x>70</x>
+     <y>500</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -510,8 +244,8 @@
   <widget class="QPushButton" name="pushButton_EQUILIBRADA">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>520</y>
+     <x>210</x>
+     <y>500</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -523,8 +257,8 @@
   <widget class="QPushButton" name="pushButton_DEFENSIVA">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>520</y>
+     <x>350</x>
+     <y>500</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -536,8 +270,8 @@
   <widget class="QLabel" name="label_15">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>520</y>
+     <x>480</x>
+     <y>500</y>
      <width>151</width>
      <height>20</height>
     </rect>
@@ -649,14 +383,37 @@
   <widget class="QProgressBar" name="progressBar">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>520</y>
+     <x>660</x>
+     <y>500</y>
      <width>118</width>
      <height>23</height>
     </rect>
    </property>
    <property name="value">
     <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>70</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CONVOCADOS</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>100</y>
+     <width>121</width>
+     <height>361</height>
+    </rect>
    </property>
   </widget>
  </widget>
