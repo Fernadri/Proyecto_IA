@@ -11,7 +11,7 @@ public:
     string contrasena;
     string cargo;
     map<string,string> listausuario_Contrasena;
-    map<string,string> listausuario_Cargo;
+    //map<string,string> listausuario_Cargo;
 
     CuerpoTecnico();
     void insertarUsuario(string,string,string);
@@ -21,6 +21,7 @@ public:
 class SegundoEntrenador:public CuerpoTecnico{
 public:
     SegundoEntrenador();
+    int decidir(string);
     //void meterJugador();
     //void quitarJugador();
 };
@@ -28,6 +29,7 @@ public:
 class PrimerEntrenador:public SegundoEntrenador{
 public:
     PrimerEntrenador();
+    void decidir(int);
     //void decidirFormacion();
     //void meterJugador();
     //void quitarJugador();

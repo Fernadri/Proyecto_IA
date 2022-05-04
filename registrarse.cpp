@@ -1,6 +1,9 @@
 #include "registrarse.h"
 #include "ui_registrarse.h"
 #include "fallo_registrar.h"
+#include "formacion433.h"
+
+int cargo;
 
 Registrarse::Registrarse(QWidget *parent) :
     QDialog(parent),
@@ -31,9 +34,11 @@ QString Registrarse::getCargo(){
 
 void Registrarse::on_buttonBox_accepted()
 {
-    if (ui->lineEdit_cargo_regis->text() != "1" && ui->lineEdit_cargo_regis->text() != "2")
+    cargo = ui->lineEdit_cargo_regis->text().toInt();
+    if (cargo != 1 && cargo != 2)
     {
         fallo_registrar fallo;
         fallo.exec();
     }
+
 }

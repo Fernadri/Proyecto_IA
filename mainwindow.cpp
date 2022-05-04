@@ -9,7 +9,7 @@
 #include "fallo_registrar.h"
 #include "elegirformacion.h"
 
-extern CuerpoTecnico cuerp;
+CuerpoTecnico cuerp;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,7 +27,7 @@ void MainWindow::on_pushButton_Registrarse_clicked(){
     Registrarse r;
     if (r.exec()){
         cuerp.listausuario_Contrasena.insert(make_pair(r.getUsuario().toStdString(),r.getContrasena().toStdString()));
-        cuerp.listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo().toStdString()));
+        //cuerp.listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo().toStdString()));
     }
 }
 

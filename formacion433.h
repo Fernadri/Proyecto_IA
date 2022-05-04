@@ -19,7 +19,11 @@ private slots:
 
     void on_pushButton_mostrar_clicked();
 
-    void on_pushButton_portero_clicked();
+    void on_pushButtonOFENSIVA_clicked();
+
+    void on_pushButton_EQUILIBRADA_clicked();
+
+    void on_pushButton_DEFENSIVA_clicked();
 
 private:
     Ui::formacion433 *ui;
