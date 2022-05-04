@@ -6,6 +6,4 @@ Equipo::Equipo(){
 
 }
 
-void Equipo::setNombre(string nombre){
-    nombre_equipo=nombre;
-}
+
