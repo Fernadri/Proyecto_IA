@@ -9,8 +9,7 @@
 #include "fallo_registrar.h"
 #include "elegirformacion.h"
 
-CuerpoTecnico cuerp;
-
+extern CuerpoTecnico cuerp;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -23,8 +22,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
 
 void MainWindow::on_pushButton_Registrarse_clicked(){
     Registrarse r;

@@ -6,7 +6,7 @@ CuerpoTecnico::CuerpoTecnico(){
 
 }
 
-PrimerEntrenador::PrimerEntrenador():CuerpoTecnico(){
+PrimerEntrenador::PrimerEntrenador():SegundoEntrenador(){
 
 }
 

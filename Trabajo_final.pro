@@ -19,21 +19,39 @@ SOURCES += \
     Cuerpotecnico.cpp \
     Equipo.cpp \
     Jugador.cpp \
-    Primerentrenador.cpp \
+    elegirformacion.cpp \
+    fallo_registrar.cpp \
+    formacion433.cpp \
+    formacion442.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    registrarse.cpp
 
 HEADERS += \
     Cuerpotecnico.h \
     Equipo.h \
     Jugador.h \
-    Primerentrenador.h \
-    mainwindow.h
+    elegirformacion.h \
+    fallo_registrar.h \
+    formacion433.h \
+    formacion442.h \
+    mainwindow.h \
+    registrarse.h
 
 FORMS += \
-    mainwindow.ui
+    elegirformacion.ui \
+    fallo_registrar.ui \
+    formacion433.ui \
+    formacion442.ui \
+    mainwindow.ui \
+    registrarse.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Imagen/image.qrc
+
+DISTFILES +=
