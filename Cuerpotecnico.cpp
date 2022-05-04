@@ -13,11 +13,11 @@ CuerpoTecnico::CuerpoTecnico(){
 
 }
 
-PrimerEntrenador::PrimerEntrenador():SegundoEntrenador(){
+PrimerEntrenador::PrimerEntrenador():CuerpoTecnico(){
 
 }
 
-SegundoEntrenador::SegundoEntrenador():CuerpoTecnico(){
+SegundoEntrenador::SegundoEntrenador():PrimerEntrenador(){
 
 }
 

@@ -20,16 +20,17 @@ public:
     int buscarCargo(string,CuerpoTecnico);
 };
 
-class SegundoEntrenador:public CuerpoTecnico{
+class PrimerEntrenador:public CuerpoTecnico{
+public:
+    PrimerEntrenador();
+    vector<int> decidir(int,vector<int>);
+};
+
+class SegundoEntrenador:public PrimerEntrenador{
 public:
     SegundoEntrenador();
     int decidir(string);
 };
 
-class PrimerEntrenador:public SegundoEntrenador{
-public:
-    PrimerEntrenador();
-    vector<int> decidir(int,vector<int>);
-};
 
 
