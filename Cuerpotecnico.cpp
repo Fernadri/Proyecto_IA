@@ -2,11 +2,12 @@
 #include "formacion433.h"
 #include <vector>
 #include "fallo_registrar.h"
+#include "elegirformacion.h"
+#include "registrarse.h"
 
 using namespace std;
 string nivel;
 int porcentaje;
-
 
 CuerpoTecnico::CuerpoTecnico(){
 
@@ -20,15 +21,36 @@ SegundoEntrenador::SegundoEntrenador():CuerpoTecnico(){
 
 }
 
-void CuerpoTecnico::insertarUsuario(string nom, string contra, string rango){
-    usuario=nom;
-    contrasena=contra;
-    cargo=rango;
+void CuerpoTecnico::insertarUsuario(CuerpoTecnico* cuerpoTec){
+    Registrarse r;
+    if (r.exec()){
+        cuerpoTec->listausuario_Contrasena.insert(make_pair(r.getUsuario().toStdString(),r.getContrasena().toStdString()));
+        cuerpoTec->listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo()));
+    }
 }
 
-void CuerpoTecnico::buscarUsuario(string nom, string contra){
-    usuario=nom;
-    contrasena=contra;
+void CuerpoTecnico::buscarUsuario(string user,CuerpoTecnico cuerpoTec,string password){
+    try {
+        string contra = cuerpoTec.listausuario_Contrasena.at(user);
+        if (contra == password)
+        {
+            elegirFormacion Formaci;
+            if (Formaci.exec()){
+
+            }
+        }else{
+            fallo_registrar fallo;
+            fallo.exec();
+        }
+    } catch (const out_of_range error) {
+        fallo_registrar fallo;
+        fallo.exec();
+    }
+}
+
+int CuerpoTecnico::buscarCargo(string user, CuerpoTecnico cuerpoTec){
+    int cargo = cuerpoTec.listausuario_Cargo.at(user);
+    return cargo;
 }
 
 int SegundoEntrenador::decidir(string nivel){

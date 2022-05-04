@@ -7,6 +7,4 @@ public:
     string nombre_equipo;
 public:
     Equipo();
-    void setNombre(string);
-    string getNombre();
 };

@@ -6,11 +6,4 @@ Equipo::Equipo(){
 
 }
 
-void Equipo::setNombre(string nombre){
-    nombre_equipo=nombre;
-}
-
-string Equipo::getNombre(){
-    return nombre_equipo;
-}
 

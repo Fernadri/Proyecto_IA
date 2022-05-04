@@ -10,12 +10,14 @@ class CuerpoTecnico{
 public:
     string usuario;
     string contrasena;
-    string cargo;
+    int cargo;
     map<string,string> listausuario_Contrasena;
+    map<string,int> listausuario_Cargo;
 
     CuerpoTecnico();
-    void insertarUsuario(string,string,string);
-    void buscarUsuario(string,string);
+    void insertarUsuario(CuerpoTecnico*);
+    void buscarUsuario(string,CuerpoTecnico,string);
+    int buscarCargo(string,CuerpoTecnico);
 };
 
 class SegundoEntrenador:public CuerpoTecnico{

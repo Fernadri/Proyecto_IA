@@ -8,7 +8,7 @@
 
 using namespace std;
 Equipo myteam;
-string nombre_;
+
 elegirFormacion::elegirFormacion(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::elegirFormacion)
@@ -24,18 +24,14 @@ elegirFormacion::~elegirFormacion()
 void elegirFormacion::on_pushButton_433_clicked()
 {
     formacion433 form433;
-    QString nombre = ui->lineEdit_nombre_equipo->text();
-    nombre_ = nombre.toStdString();
-    myteam.nombre_equipo=nombre_;
+    myteam.nombre_equipo = ui->lineEdit_nombre_equipo->text().toStdString();
     form433.exec();
 }
 
 void elegirFormacion::on_pushButton_442_clicked()
 {
     formacion442 form442;
-    QString nombre = ui->lineEdit_nombre_equipo->text();
-    nombre_ = nombre.toStdString();
-    myteam.nombre_equipo=nombre_;
+    myteam.nombre_equipo = ui->lineEdit_nombre_equipo->text().toStdString();
     form442.exec();
 }
 

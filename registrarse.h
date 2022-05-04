@@ -18,7 +18,7 @@ public:
     ~Registrarse();
     QString getUsuario();
     QString getContrasena();
-    QString getCargo();
+    int getCargo();
 private slots:
     void on_buttonBox_accepted();
 

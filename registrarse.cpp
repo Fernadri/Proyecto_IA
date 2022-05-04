@@ -2,8 +2,10 @@
 #include "ui_registrarse.h"
 #include "fallo_registrar.h"
 #include "formacion433.h"
+#include "Cuerpotecnico.h"
 
-int cargo;
+int cargo_;
+
 
 Registrarse::Registrarse(QWidget *parent) :
     QDialog(parent),
@@ -27,18 +29,17 @@ QString Registrarse::getContrasena(){
     return contrasena_;
 }
 
-QString Registrarse::getCargo(){
-    QString cargo_ = ui->lineEdit_cargo_regis->text();
-    return cargo_;
+int Registrarse::getCargo(){
+    QString carg = ui->lineEdit_cargo_regis->text();
+    return carg.toInt();
 }
 
 void Registrarse::on_buttonBox_accepted()
 {
-    cargo = ui->lineEdit_cargo_regis->text().toInt();
-    if (cargo != 1 && cargo != 2)
+    cargo_ = ui->lineEdit_cargo_regis->text().toInt();
+    if (cargo_ != 1 && cargo_ != 2)
     {
         fallo_registrar fallo;
         fallo.exec();
     }
-
 }

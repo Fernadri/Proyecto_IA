@@ -9,8 +9,7 @@
 #include <vector>
 
 extern Equipo myteam;
-extern string nombre_;
-extern int cargo;
+extern CuerpoTecnico cuerp;
 string nivel1;
 SegundoEntrenador entre2;
 PrimerEntrenador entre1;
@@ -33,8 +32,8 @@ formacion433::~formacion433()
 
 void formacion433::on_pushButton_mostrar_clicked()
 {
-    ui->lineEdit_nombre_equipo_433->setText(QString::fromStdString(nombre_));
-    if (cargo == 1){
+    ui->lineEdit_nombre_equipo_433->setText(QString::fromStdString(myteam.nombre_equipo));
+    if (cuerp.cargo == 1){
         ui->pushButtonOFENSIVA->setEnabled(0);
         ui->pushButton_EQUILIBRADA->setEnabled(0);
         ui->pushButton_DEFENSIVA->setEnabled(0);

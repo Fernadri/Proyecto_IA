@@ -11,6 +11,7 @@
 #include "QProgressDialog"
 
 CuerpoTecnico cuerp;
+extern int cargo_;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,11 +25,7 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::on_pushButton_Registrarse_clicked(){
-    Registrarse r;
-    if (r.exec()){
-        cuerp.listausuario_Contrasena.insert(make_pair(r.getUsuario().toStdString(),r.getContrasena().toStdString()));
-        //cuerp.listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo().toStdString()));
-    }
+    cuerp.insertarUsuario(&cuerp);
 }
 
 void MainWindow::on_commandLinkButton_clicked(){
@@ -54,20 +51,8 @@ void MainWindow::on_pushButton_clicked()
     progress.setValue(numTasks);
     progress.setValue(100);
     progress.accept();
-    try {
-        contra = cuerp.listausuario_Contrasena.at(ui->lineEdit_Usuario->text().toStdString());
-        if (contra == ui->lineEdit_2->text().toStdString())
-        {
-            elegirFormacion Formaci;
-            if (Formaci.exec()){
-
-            }
-        }else{
-            fallo_registrar fallo;
-            fallo.exec();
-        }
-    } catch (const out_of_range error) {
-        fallo_registrar fallo;
-        fallo.exec();
-    }
+    cuerp.usuario = ui->lineEdit_Usuario->text().toStdString();
+    cuerp.contrasena = ui->lineEdit_2->text().toStdString();
+    cuerp.cargo = cuerp.buscarCargo(cuerp.usuario,cuerp);
+    cuerp.buscarUsuario(cuerp.usuario,cuerp,cuerp.contrasena);
 }

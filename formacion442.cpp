@@ -9,8 +9,7 @@
 #include "elegirformacion.h"
 
 extern Equipo myteam;
-extern string nombre_;
-extern int cargo;
+extern CuerpoTecnico cuerp;
 string nivel2;
 SegundoEntrenador entre22;
 PrimerEntrenador entre11;
@@ -32,8 +31,8 @@ formacion442::~formacion442()
 }
 
 void formacion442::on_pushButton_mostrar_442_clicked(){
-    ui->lineEdit_nombre_equipo_442->setText(QString::fromStdString(nombre_));
-    if (cargo == 1){
+    ui->lineEdit_nombre_equipo_442->setText(QString::fromStdString(myteam.nombre_equipo));
+    if (cuerp.cargo == 1){
         ui->pushButtonOFENSIVA->setEnabled(0);
         ui->pushButtonEQUILIBRADA->setEnabled(0);
         ui->pushButtonDEFENSIVA->setEnabled(0);

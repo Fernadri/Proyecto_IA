@@ -18,7 +18,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Cuerpotecnico.cpp \
     Equipo.cpp \
-    Jugador.cpp \
     elegirformacion.cpp \
     fallo_registrar.cpp \
     formacion433.cpp \
@@ -30,7 +29,6 @@ SOURCES += \
 HEADERS += \
     Cuerpotecnico.h \
     Equipo.h \
-    Jugador.h \
     elegirformacion.h \
     fallo_registrar.h \
     formacion433.h \
