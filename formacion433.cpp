@@ -38,6 +38,15 @@ void formacion433::on_pushButton_mostrar_clicked()
         ui->pushButton_EQUILIBRADA->setEnabled(0);
         ui->pushButton_DEFENSIVA->setEnabled(0);
         ui->progressBar->setValue(50);
+        //inicializamos la lista con los 23 jugadores
+        for (int i = 1; i <= 25; i++){
+            convocados.at(i-1) = i;
+        }
+        for (int i=0; i<=24; i++){
+            cadena = cadena + saltolinea + to_string(convocados[i]);
+
+            ui->plainTextEdit->setPlainText(QString::fromStdString(cadena));
+        }
     }else{
         ui->pushButton_central_d->setEnabled(0);
         ui->pushButton_central_i->setEnabled(0);
@@ -52,14 +61,14 @@ void formacion433::on_pushButton_mostrar_clicked()
         ui->pushButton_portero->setEnabled(0);
     }
     //inicializamos la lista con los 23 jugadores
-    for (int i = 1; i <= 25; i++){
-        convocados.at(i-1) = i;
-    }
-    for (int i=0; i<=24; i++){
-        cadena = cadena + saltolinea + to_string(convocados[i]);
+    //for (int i = 1; i <= 25; i++){
+      //  convocados.at(i-1) = i;
+    //}
+    //for (int i=0; i<=24; i++){
+        //cadena = cadena + saltolinea + to_string(convocados[i]);
 
-        ui->plainTextEdit->setPlainText(QString::fromStdString(cadena));
-    }
+      //  ui->plainTextEdit->setPlainText(QString::fromStdString(cadena));
+    //}
 }
 
 void formacion433::on_pushButtonOFENSIVA_clicked()

@@ -37,6 +37,15 @@ void formacion442::on_pushButton_mostrar_442_clicked(){
         ui->pushButtonEQUILIBRADA->setEnabled(0);
         ui->pushButtonDEFENSIVA->setEnabled(0);
         ui->progressBar->setValue(50);
+        //inicializamos la lista con los 23 jugadores
+        for (int i = 1; i <= 25; i++){
+            convocados2.at(i-1) = i;
+        }
+        for (int i=0; i<=24; i++){
+            cadena2 = cadena2 + saltolinea2 + to_string(convocados2[i]);
+
+            ui->plainTextEdit->setPlainText(QString::fromStdString(cadena2));
+        }
     }else{
         ui->pushButton_central_d->setEnabled(0);
         ui->pushButton_central_i->setEnabled(0);
@@ -50,15 +59,6 @@ void formacion442::on_pushButton_mostrar_442_clicked(){
         ui->pushButton_lateral_mcd_2->setEnabled(0);
         ui->pushButton_portero->setEnabled(0);
 }
-    //inicializamos la lista con los 23 jugadores
-    for (int i = 1; i <= 25; i++){
-        convocados2.at(i-1) = i;
-    }
-    for (int i=0; i<=24; i++){
-        cadena2 = cadena2 + saltolinea2 + to_string(convocados2[i]);
-
-        ui->plainTextEdit->setPlainText(QString::fromStdString(cadena2));
-    }
 }
 
 
