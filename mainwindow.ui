@@ -19,25 +19,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>1051</width>
-      <height>641</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>Imagen/ImagenInicial.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -111,18 +92,24 @@
    <widget class="QCommandLinkButton" name="commandLinkButton">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>900</x>
       <y>530</y>
       <width>187</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
     <property name="text">
      <string>Salir</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Imagen/salir.png</normaloff>Imagen/salir.png</iconset>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -163,6 +150,44 @@
      <string>Registrarse</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1071</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Imagen/imagenes.qrc">:/ImagenInicial.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>300</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Continuar</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>lineEdit_Usuario</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>commandLinkButton</zorder>
+   <zorder>label_4</zorder>
+   <zorder>pushButton_Registrarse</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -170,12 +195,14 @@
      <x>0</x>
      <y>0</y>
      <width>1028</width>
-     <height>41</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="Imagen/imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>

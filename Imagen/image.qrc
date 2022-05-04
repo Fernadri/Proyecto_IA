@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>433.png</file>
+        <file>442.png</file>
+        <file>elegirFormacion.png</file>
+        <file>eror.png</file>
+        <file>ImagenInicial.png</file>
+        <file>registrarse.jpg</file>
+        <file>froma.png</file>
+    </qresource>
+</RCC>

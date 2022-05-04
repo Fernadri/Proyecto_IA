@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>elegirFormacion.png</file>
+    </qresource>
+</RCC>
