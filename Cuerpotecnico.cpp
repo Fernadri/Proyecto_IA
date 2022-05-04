@@ -49,7 +49,13 @@ void CuerpoTecnico::buscarUsuario(string user,CuerpoTecnico cuerpoTec,string pas
 }
 
 int CuerpoTecnico::buscarCargo(string user, CuerpoTecnico cuerpoTec){
+  try {
     int cargo = cuerpoTec.listausuario_Cargo.at(user);
+    return cargo;
+    } catch (const out_of_range error) {
+        //fallo_registrar fallo;
+        //fallo.exec();
+    }
     return cargo;
 }
 
