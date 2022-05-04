@@ -1,17 +1,34 @@
 #include <iostream>
 #include <string>
+#include <QString>
 #include <map>
 
 using namespace std;
 
-class Cuerpotecnico{
+class CuerpoTecnico{
 public:
     string usuario;
     string contrasena;
     string cargo;
-    map<string,string> listausuario;
+    map<QString,QString> listausuario_Contrasena;
+    map<QString,QString> listausuario_Cargo;
 
-    Cuerpotecnico();
+    CuerpoTecnico();
     void insertarUsuario(string,string,string);
-    void buscarUsuario(string,string,string);
+    void buscarUsuario(string,string);
+};
+
+class PrimerEntrenador:public CuerpoTecnico{
+public:
+    PrimerEntrenador();
+    //void decidirFormacion();
+    //void meterJugador();
+    //void quitarJugador();
+};
+
+class SegundoEntrenador:public CuerpoTecnico{
+public:
+    SegundoEntrenador();
+    //void meterJugador();
+    //void quitarJugador();
 };
