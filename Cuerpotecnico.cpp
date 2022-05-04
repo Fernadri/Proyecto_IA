@@ -4,6 +4,8 @@
 #include "fallo_registrar.h"
 #include "elegirformacion.h"
 #include "registrarse.h"
+#include <map>
+#include "error_registrarse.h"
 
 using namespace std;
 string nivel;
@@ -24,8 +26,13 @@ SegundoEntrenador::SegundoEntrenador():PrimerEntrenador(){
 void CuerpoTecnico::insertarUsuario(CuerpoTecnico* cuerpoTec){
     Registrarse r;
     if (r.exec()){
-        cuerpoTec->listausuario_Contrasena.insert(make_pair(r.getUsuario().toStdString(),r.getContrasena().toStdString()));
-        cuerpoTec->listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo()));
+        if(cuerpoTec->listausuario_Contrasena.count(r.getUsuario().toStdString()) == 0){
+            cuerpoTec->listausuario_Contrasena.insert(make_pair(r.getUsuario().toStdString(),r.getContrasena().toStdString()));
+            cuerpoTec->listausuario_Cargo.insert(make_pair(r.getUsuario().toStdString(),r.getCargo()));
+        }else{
+            error_registrarse error;
+            error.exec();
+        }
     }
 }
 

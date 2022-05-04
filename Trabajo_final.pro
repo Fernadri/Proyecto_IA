@@ -19,6 +19,7 @@ SOURCES += \
     Cuerpotecnico.cpp \
     Equipo.cpp \
     elegirformacion.cpp \
+    error_registrarse.cpp \
     fallo_registrar.cpp \
     formacion433.cpp \
     formacion442.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     Cuerpotecnico.h \
     Equipo.h \
     elegirformacion.h \
+    error_registrarse.h \
     fallo_registrar.h \
     formacion433.h \
     formacion442.h \
@@ -38,6 +40,7 @@ HEADERS += \
 
 FORMS += \
     elegirformacion.ui \
+    error_registrarse.ui \
     fallo_registrar.ui \
     formacion433.ui \
     formacion442.ui \

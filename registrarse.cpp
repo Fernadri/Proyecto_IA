@@ -42,4 +42,5 @@ void Registrarse::on_buttonBox_accepted()
         fallo_registrar fallo;
         fallo.exec();
     }
+
 }
